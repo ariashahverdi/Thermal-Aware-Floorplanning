@@ -1,0 +1,500 @@
+    30	22:35	opt --loop-simplify example11.bc -o example12.bc
+    31	22:35	opt -mem2reg example12.bc -o example14.bc
+    32	22:35	cd ../obj
+    33	22:35	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    34	22:36	make install
+    35	22:36	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    36	22:37	make install
+    37	22:37	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    38	22:38	make install
+    39	22:38	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    40	22:38	make install
+    41	22:38	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    42	13:40	cd compiler/
+    43	13:40	cd test_codes/
+    44	13:42	llvm-dis /example1.bc -o example1_bc.ll
+    45	13:42	clang -c -emit-llvm example1.c -o example1.bc
+    46	13:42	setenv PATH /afs/glue/class/old/enee/759c/llvm/llvm-3.4-install/opt/bin/:$PATH
+    47	13:43	clang -c -emit-llvm example1.c -o example1.bc
+    48	13:43	llvm-dis /example1.bc -o example1_bc.ll
+    49	13:43	llvm-dis example1.bc -o example1_bc.ll
+    50	14:00	rm *.bc
+    51	14:01	cd ../obj/
+    52	14:01	clang -c -emit-llvm example2.c -o example1.bc
+    53	14:01	opt -licm example1.bc -o example11.bc
+    54	14:01	opt --loop-simplify example11.bc -o example12.bc
+    55	14:01	opt -mem2reg example12.bc -o example14.bc
+    56	14:01	cd -
+    57	14:01	clang -c -emit-llvm example2.c -o example1.bc
+    58	14:01	opt -licm example1.bc -o example11.bc
+    59	14:01	opt --loop-simplify example11.bc -o example12.bc
+    60	14:01	opt -mem2reg example12.bc -o example14.bc
+    61	14:01	cd -
+    62	14:02	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    63	14:19	cd -
+    64	14:19	clang -c -emit-llvm example4.c -o example1.bc
+    65	14:19	opt -licm example1.bc -o example11.bc
+    66	14:19	opt --loop-simplify example11.bc -o example12.bc
+    67	14:19	opt -mem2reg example12.bc -o example14.bc
+    68	14:19	cd -
+    69	14:19	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    70	14:38	make install
+    71	14:39	make install
+    72	14:40	make install
+    73	14:40	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    74	14:42	make install
+    75	14:42	opt -load ../opt/lib/Mypass.so -Mypass ../test_codes/example14.bc -o example.Mypass_new.bc
+    76	23:16	ls
+    77	23:16	cd nithya
+    78	23:17	ls
+    79	23:17	gcc combined.c
+    80	23:17	./a.out 4 text.txt
+    81	23:19	gcc combined.c
+    82	23:19	./a.out 4 text.txt
+    83	23:20	gcc combined.c
+    84	23:20	./a.out 4 text.txt
+    85	12:15	mkdir vlsi
+    86	12:15	cd vlsi
+    87	12:16	tap cadenceIC6
+    88	12:21	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit
+    89	12:21	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit .
+    90	12:22	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib .
+    91	12:22	virtuoso &
+    92	16:41	cd vlsi/
+    93	16:42	virtuoso $
+    94	16:42	ls
+    95	16:46	tap cadenceIC6
+    96	16:47	virtuoso &
+    97	16:50	ls
+    98	16:50	cd vlsi
+    99	16:50	ls
+   100	16:51	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit .
+   101	16:51	tap cadenceIC6
+   102	16:52	virtuoso &
+   103	19:53	tap CadenceIC6
+   104	19:53	tap cadenceIC6
+   105	19:53	virtuoso &
+   106	19:55	virtuoso &
+   107	19:55	cd vlsi/
+   108	19:55	tap cadenceIC6
+   109	19:55	virtuoso &
+   110	19:56	ls
+   111	19:56	tap cadenceIC6
+   112	19:56	virtuoso &
+   113	20:03	tap cadenceIC6
+   114	20:03	virtuoso &
+   115	20:04	exit
+   116	20:31	cd vlsi
+   117	20:31	tap cadenceIC6
+   118	20:31	virtuoso &
+   119	20:31	quit
+   120	20:32	exit
+   121	20:46	emacs
+   122	20:47	hostname
+   123	20:47	cd vlsi/
+   124	20:47	tap cadenceIC6
+   125	20:47	virtuoso &
+   126	20:48	ping x.glue.umd.edu
+   127	20:49	clsbd
+   128	20:49	virtuoso &
+   129	20:50	ls
+   130	20:50	cd ../
+   131	20:50	; s
+   132	20:50	ls
+   133	20:51	rm -f CDS.log CDS.log.cdslck
+   134	20:51	ls
+   135	20:51	cd -
+   136	20:51	tap cadenceIC6
+   137	20:51	virtuoso &
+   138	20:52	hostname w.glue.umd.edu
+   139	20:52	ping w.glue.umd.edu
+   140	20:53	ls
+   141	20:54	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit .
+   142	20:54	virtuoso &
+   143	20:55	cdnshelp
+   144	21:16	ls
+   145	21:17	exit
+   146	21:28	exit
+   147	14:19	ping linux.glue.umd.edu
+   148	14:19	exit
+   149	16:31	cd vlsi
+   150	16:32	rstart
+   151	16:32	exit
+   152	16:33	cd vlsi
+   153	16:33	tap cadenceIC6
+   154	16:33	virtuoso &
+   155	16:35	p
+   156	16:35	ps
+   157	16:35	ps
+   158	16:35	w
+   159	16:35	exit
+   160	18:06	cd vlsi
+   161	18:06	ls
+   162	18:07	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit .
+   163	18:07	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib .
+   164	18:07	tap cadenceIC6
+   165	18:07	virtuoso &
+   166	18:10	virtuoso &
+   167	18:13	tap cadenceIC6
+   168	18:13	virtuoso &
+   169	18:15	virtuoso &
+   170	18:18	virtuoso &
+   171	18:23	exit
+   172	9:55	cd vlsi
+   173	9:55	tap cadenceIC6
+   174	9:55	virtuoso &
+   175	9:55	exit
+   176	18:20	cd vlsi
+   177	18:20	tap cadenceIC6
+   178	18:20	virtuoso &
+   179	18:25	ssh w
+   180	18:27	exit
+   181	19:54	cd vlsi
+   182	19:54	tap cadenceIC6
+   183	19:55	virtuoso &
+   184	23:31	exit
+   185	10:13	cd vlsi
+   186	10:13	tap cadenceIC6
+   187	10:13	virtuoso &
+   188	12:50	ls
+   189	12:50	cd Sim_directory/
+   190	12:50	ls
+   191	12:50	rm spectre.run1/
+   192	12:50	rm -r spectre.run1/
+   193	14:19	logout
+   194	14:21	cd vlsi
+   195	14:21	tap cadenceIC6
+   196	14:21	virtuoso &
+   197	14:22	cd Sim_directory/
+   198	14:22	ls
+   199	14:22	cd spectre.run4/
+   200	14:22	ls
+   201	14:22	vim si.inp
+   202	14:23	gedit si.inp
+   203	14:23	clear
+   204	14:23	vim si.inp
+   205	14:43	cd ../spectre.run5
+   206	14:43	ls
+   207	14:43	vim si.inp
+   208	14:48	vim si.log
+   209	14:49	vin si.inp
+   210	14:49	vim si.inp
+   211	18:22	cd vlsi
+   212	18:24	cadenceIC6
+   213	18:24	tap cadenceIC6
+   214	18:24	virtuoso
+   215	18:32	cd vlsi
+   216	18:32	tap cadenceIC6
+   217	18:32	virtuoso &&
+   218	18:32	virtuoso &
+   219	22:14	logout
+   220	11:12	cd clsi
+   221	11:12	cd vlsi
+   222	11:13	tap cadenceIC6
+   223	11:13	virtuoso &
+   224	12:33	logout
+   225	18:47	cd vlsi
+   226	18:47	tap cadenceIC6
+   227	18:47	virtuoso &
+   228	19:13	cd vlsi
+   229	19:14	tap cadenceIC6
+   230	19:14	virtuoso &
+   231	9:00	logout
+   232	13:20	cd vlsi
+   233	13:20	tap cadenceIC6
+   234	13:20	virtuoso &
+   235	13:34	logout
+   236	20:30	cd vlsi
+   237	20:31	tap cadenceIC6
+   238	20:31	virtuoso &
+   239	20:41	virtuoso &
+   240	20:47	virtuoso &
+   241	15:43	logout
+   242	13:50	cd vlsi
+   243	13:50	tap cadenceIC6
+   244	13:51	virtuoso &
+   245	13:54	tap cadenceIC6
+   246	13:54	virtuoso &
+   247	14:01	exit
+   248	12:15	cd vlsi
+   249	12:15	tap cadenceIC6
+   250	12:15	virtuoso &
+   251	23:38	exit
+   252	13:33	cd vlsi
+   253	13:34	tap cadenceIC6
+   254	13:35	virtuoso &
+   255	22:20	cd vlsi
+   256	22:20	tap cadenceIC6
+   257	22:31	virtuoso &
+   258	23:24	quit
+   259	23:24	exit
+   260	22:55	cd vlsi
+   261	22:55	tap cadenceIC6
+   262	22:55	virtuoso &
+   263	23:40	exit
+   264	19:59	cd vlsi
+   265	20:00	tap cadenceIC6
+   266	20:02	virtuoso &
+   267	20:16	virtuoso &
+   268	20:21	cp /afs/glue.umd.edu/department/enee/software/cadenceI
+   269	20:21	cp /afs/glue.umd.edu/department/enee/software/cadenceI
+   270	20:22	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit
+   271	20:22	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/.cdsinit .
+   272	20:23	cp /afs/glue.umd.edu/department/enee/software/cadenceIC616/inst/ncsu-cdk-1.6.0.beta/cdssetup/cds.lib .
+   273	20:23	virtuoso &
+   274	22:23	VIRTUOSO
+   275	22:23	virtuoso &
+   276	19:10	cd vlsi
+   277	19:11	tap cadenceIC6
+   278	19:12	virtuoso &
+   279	21:24	quit
+   280	21:24	logout
+   281	12:17	cd vlsi
+   282	12:17	tap cadenceIC6
+   283	12:18	virtuoso &
+   284	14:56	cd vlsi
+   285	14:56	tap cadenceIC6
+   286	14:57	virtuoso &
+   287	17:10	cd vlsi
+   288	17:10	tap cadenceIC6
+   289	17:11	virtuoso &
+   290	9:12	exit
+   291	9:20	cd vlsi
+   292	9:20	tap cadenceIC6
+   293	9:21	virtuoso &
+   294	9:22	tap cadenceIC6
+   295	9:22	virtuoso &
+   296	9:47	logout
+   297	16:41	cd vlsi
+   298	16:41	tap cadenceIC6
+   299	16:41	virtuoso &
+   300	21:35	exit
+   301	19:38	cd vlsi
+   302	19:38	tap cadenceIC6
+   303	19:46	virtuoso &
+   304	19:08	cd vlsi
+   305	19:16	tap cadenceIC6
+   306	19:16	virtuoso &
+   307	20:26	quit
+   308	20:26	exit
+   309	14:56	cd vlsi
+   310	14:56	tap cadenceIC6
+   311	14:56	virtuoso &
+   312	0:28	logout
+   313	10:33	cd vlsi
+   314	10:33	tap cadenceIC6
+   315	10:36	virtuoso &
+   316	23:48	logout
+   317	12:02	cd vlsi
+   318	12:02	tap cadenceIC6
+   319	12:02	virtuoso &
+   320	12:25	logout
+   321	19:37	cd vlsi
+   322	19:37	tap cadenceIC6
+   323	19:37	virtuoso &
+   324	0:57	logout
+   325	17:53	cd vlsi
+   326	17:57	cd Final_Project/
+   327	17:57	gcc Read_Write.c -0 abc.out
+   328	17:57	gcc Read_Write.c -o abc.out
+   329	17:58	gcc Read_Write.c -o abc.out
+   330	17:59	gcc Read_Write.c -o abc.out
+   331	18:03	gcc Read_Write.c -o abc.out
+   332	18:03	gcc Read_Write.c -o abc.out
+   333	18:04	gcc Read_Write.c -o abc.out
+   334	18:04	gcc Read_Write.c -o abc.out
+   335	18:04	gcc Read_Write.c -o abc.out
+   336	18:05	gcc Read_Write.c -o
+   337	18:05	gcc Read_Write.c -o abc.out
+   338	18:05	./abc.out
+   339	20:11	cd vlsi
+   340	20:12	cd Final_Project/
+   341	20:12	./abc.out input1.txt 11367032.txt
+   342	20:13	gcc Read_Write.c -o abc.out
+   343	20:13	./abc.out input1.txt 11367032.txt
+   344	20:14	gcc Read_Write.c -o abc.out
+   345	20:14	./abc.out input1.txt 11367032.txt
+   346	20:15	./abc.out input1.txt 113670732.txt
+   347	20:18	gcc Read_Write.c -o abc.out
+   348	20:18	./abc.out input1.txt 113670732.txt
+   349	20:18	gcc Read_Write.c -o abc.out
+   350	20:18	./abc.out input1.txt 113670732.txt
+   351	20:19	gcc Read_Write.c -o abc.out
+   352	20:19	./abc.out input1.txt 113670732.txt
+   353	20:22	gcc Read_Write.c -o abc.out
+   354	20:22	./abc.out input1.txt 113670732.txt
+   355	20:24	gcc Read_Write.c -o abc.out
+   356	20:24	./abc.out input1.txt 113670732.txt
+   357	20:24	gdb
+   358	20:27	gcc Read_Write.c -o abc.out
+   359	20:28	gcc Read_Write.c -o abc.out
+   360	20:28	./abc.out input1.txt 113670732.txt
+   361	22:07	cd vlsi
+   362	22:07	cd Final_Project/
+   363	22:07	gcc Read_Write.c -o abc.out
+   364	22:08	./abc.out input1.txt 113670732.txt
+   365	22:10	gcc Read_Write.c -o abc.out
+   366	22:10	./abc.out input1.txt 113670732.txt
+   367	22:11	gcc Read_Write.c -o abc.out
+   368	22:12	gcc Read_Write.c -o abc.out
+   369	22:16	gcc Read_Write.c -o abc.out
+   370	22:17	gcc Read_Write.c -o abc.out
+   371	22:18	gcc Read_Write.c -o abc.out
+   372	22:21	gcc Read_Write.c -o abc.out
+   373	22:21	gcc Read_Write.c -o abc.out
+   374	22:21	gcc Read_Write.c -o abc.out
+   375	22:31	gcc Read_Write.c -o abc.out
+   376	22:32	gcc Read_Write.c -o abc.out
+   377	22:32	./abc.out input1.txt 113670732.txt
+   378	22:32	gcc Read_Write.c -o abc.out
+   379	22:32	./abc.out input1.txt 113670732.txt
+   380	22:34	gcc Read_Write.c -o abc.out
+   381	22:34	./abc.out input1.txt 113670732.txt
+   382	22:36	./abc.out input1.txt 113670732.txt
+   383	22:37	./abc.out input1.txt 113670732.txt
+   384	22:37	./abc.out input1.txt 113670732.txt
+   385	21:18	cd vlsi
+   386	21:18	cd Final_Project/
+   387	21:18	gcc Read_Write_5_2.c -o a.out
+   388	21:19	gcc Read_Write_5_2.c -o a.out
+   389	21:23	gcc Read_Write_5_2.c -o a.out
+   390	21:23	ls
+   391	21:23	gcc Read_Write_5_2.c -o a.out
+   392	21:39	cd HotSpot-5.02/
+   393	21:40	make
+   394	21:40	make clean
+   395	21:40	make cleano
+   396	21:41	make filelist
+   397	21:41	make DEBUG=1
+   398	21:42	make DEBUG=2
+   399	21:42	make clean
+   400	21:42	make cleano
+   401	21:44	hotspot -c hotspot.config -f ev6.flp -p gcc.ptrace -o gcc.ttrace -steady_file gcc.steady
+   402	21:44	hotspot -c hotspot.config -f ev6.flp -p gcc.ptrace -o gcc.ttrace -steady_file gcc.steady
+   403	15:58	cd vlsi
+   404	15:58	ls
+   405	15:58	cd Final_Project/
+   406	15:58	cd submit/
+   407	15:58	ls
+   408	15:59	g++ *.cc -o output
+   409	10:35	cd vlsi
+   410	10:35	cd Final_Project/
+   411	10:35	cd submit/
+   412	10:36	ls
+   413	10:36	g++ *.cc -o output
+   414	10:41	g++ *.cc -o output
+   415	10:46	g++ *.cc -o output
+   416	10:47	g++ *.cc -o output
+   417	10:48	g++ *.cc -o output
+   418	10:49	g++ *.cc -o output
+   419	10:50	./output input.txt output1.pl
+   420	11:17	g++ *.cc -o output
+   421	11:17	./output input.txt output1.pl
+   422	11:19	g++ *.cc -o output
+   423	11:19	./output input.txt output1.pl
+   424	11:19	./output input.txt output1.pl
+   425	11:19	g++ *.cc -o output
+   426	11:19	./output input.txt output1.pl
+   427	11:20	g++ *.cc -o output
+   428	11:20	./output input.txt output1.pl
+   429	11:27	g++ *.cc -o output
+   430	11:27	./output input.txt output1.pl
+   431	11:29	g++ *.cc -o output
+   432	11:29	g++ *.cc -o output
+   433	11:29	./output input.txt output1.pl
+   434	11:31	g++ *.cc -o output
+   435	11:31	./output input.txt output1.pl
+   436	11:49	g++ *.cc -o output
+   437	11:50	g++ *.cc -o output
+   438	11:50	./output input.txt output1.pl
+   439	11:53	g++ *.cc -o output
+   440	11:53	./output input.txt output1.pl
+   441	18:23	cd vlsi/Final_Project/HotSpot-5.02/
+   442	18:24	gcc hotfloorplan.c -o a.out
+   443	18:36	hotspot -c hotspot.config -f ev6.flp -p gcc.ptrace -o gcc.ttrace -steady_file gcc.steady
+   444	18:36	hotspot -c hotspot.config -f ev6.flp -p gcc.ptrace -o gcc.ttrace -steady_file gcc.steady
+   445	18:37	make
+   446	18:37	make clean
+   447	18:37	make cleano
+   448	18:37	make
+   449	18:38	hotspot -c hotspot.config -f ev6.flp -p gcc.ptrace -o gcc.ttrace -steady_file gcc.steady
+   450	7:52	cd vlsi/Final_Project/code_5_9/hotspot/
+   451	7:52	make
+   452	7:53	make
+   453	7:53	make
+   454	7:55	cd ..
+   455	7:55	cd HotSpot-5.02/
+   456	7:55	make
+   457	8:05	cd..
+   458	8:05	cd ..
+   459	8:05	g++ *.cc -o output
+   460	8:05	output input.txt output.txt
+   461	8:08	g++ *.cc -o output
+   462	8:08	output input.txt output.txt
+   463	8:11	g++ *.cc -o output
+   464	8:11	g++ *.cc -o output
+   465	8:11	output input.txt output.txt
+   466	8:15	g++ *.cc -o output
+   467	8:15	g++ *.cc -o output
+   468	8:15	output input.txt output.txt
+   469	8:16	g++ *.cc -o output
+   470	8:16	output input.txt output.txt
+   471	8:17	g++ *.cc -o output
+   472	8:17	output input.txt output.txt
+   473	8:17	g++ *.cc -o output
+   474	8:17	output input.txt output.txt
+   475	9:38	cd vlsi/Final_Project/HotSpot-5.02/
+   476	9:38	make
+   477	9:41	hotspot -c hotspot.config -init_file gcc.init -f ev6.flp -p gcc.ptrace gcc.ttrace
+   478	9:41	hotspot -c hotspot.config -init_file gcc.init -f ev6.flp -p gcc.ptrace
+   479	9:45	hotspot -c hotspot.config -init_file ../sample.init -f ../sample.flp -p ../sample.ptrace
+   480	9:46	hotspot -c hotspot.config -init_file ../sample.init -f ../sample.flp -p ../sample.ptrace
+   481	9:46	hotspot -c hotspot.config -init_file ../sample.init -f ../sample.flp -p ../sample.ptrace
+   482	9:46	hotspot -c hotspot.config -init_file ../sample.init -f ev6.flp -p ../sample.ptrace
+   483	9:47	hotspot -c hotspot.config -init_file sample.init -f sample.flp -p sample.ptrace
+   484	9:48	hotspot -c hotspot.config -init_file sample.init -f ev6.flp -p sample.ptrace
+   485	9:56	cp gcc.steady gcc.init
+   486	9:57	cp gcc.steady gcc2.init
+   487	9:57	hotspot -c hotspot.config -init_file gcc2.init -f ev6.flp -p gcc.ptrace
+   488	9:59	cp gcc.steady gcc.init
+   489	10:00	hotspot -c hotspot.config -init_file gcc.init -f ev6.flp -p gcc.ptrace
+   490	10:00	hotspot -c hotspot.config -init_file sample.init -f ev6.flp -p sample.ptrace
+   491	10:32	ls
+   492	10:32	cd ..
+   493	10:32	cd code_5_9/
+   494	10:33	cd HotSpot-5.02/
+   495	10:33	make
+   496	10:33	hotspot -c hotspot.config -init_file sample.init -f ev6.flp -p sample.ptrace
+   497	10:33	hotspot -c hotspot.config -init_file gcc.init -f ev6.flp -p gcc.ptrace
+   498	10:34	cd ..
+   499	10:34	cd ../HotSpot-5.02/
+   500	10:34	hotspot -c hotspot.config -init_file sample.init -f ev6.flp -p sample.ptrace
+   501	22:14	cd vlsi/Final_Project/code_5_9/
+   502	22:14	g++ -g *.cc -o output
+   503	22:15	gdb
+   504	22:15	gdb output input.txt output.txt
+   505	22:16	gdb --args output input.txt output.txt
+   506	22:20	dsvs
+   507	22:21	trshh
+   508	22:24	thbr
+   509	22:26	vjfdkvb
+   510	22:26	vfdnvV
+   511	22:26	V'OAVN
+   512	22:43	cd HotSpot-5.02/
+   513	22:43	grep -r "parse_cmdline"
+   514	22:44	grep "parse_cmdline"
+   515	22:45	grep "parse_cmdline" *.c
+   516	23:04	make
+   517	23:05	make
+   518	23:06	make clean
+   519	23:06	make cleano
+   520	23:06	make
+   521	23:07	make
+   522	23:08	make
+   523	23:09	make
+   524	23:10	cp gcc.steady gcc.init
+   525	23:10	hotspot
+   526	23:11	make
+   527	23:11	hotspot
+   528	23:12	history
+   529	23:13	history > history.txt

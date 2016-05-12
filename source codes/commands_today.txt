@@ -1,0 +1,20 @@
+
+   337	16:30	cd /homes/rssamara/projects/ENEE640/EE640
+   338	16:30	tap cadenceIC6
+   339	16:31	virtuoso &
+   340	17:18	logout
+   341	17:04	cd /homes/rssamara/projects/ENEE640/Final
+   342	17:19	make
+   343	17:20	cd code_5_11
+   344	17:20	make
+   345	17:20	ls
+   346	17:20	cd code_5_11/
+   347	17:20	ls
+   348	17:21	make
+   349	17:21	hotspot
+   350	17:27	hotspot
+   351	17:28	g++ *.cc -o raj
+   352	17:28	raj
+   353	17:42	raj input.txt out.txt
+   354	17:42	history
+   355	17:43	history > commands_today.txt
